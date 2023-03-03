@@ -27,8 +27,9 @@ h6,
 p,
 ul {
   margin: 0;
+  padding: 0;
 }
-.img {
+img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -83,11 +84,11 @@ ul {
 /* ---------Header--------- */
 .header {
   border-bottom: 1px solid var(--accent-text-color);
+  padding: 24px 0;
 }
 .nav {
   display: flex;
   text-align: center;
-  padding: 24px 0;
 }
 .header-navigation {
   display: flex;
@@ -116,10 +117,6 @@ ul {
 }
 .header-logo span,
 .header-item {
-  color: var(--header-color);
-}
-.header-item {
-  font-weight: 500;
   color: var(--header-color);
 }
 .header-link {
@@ -169,16 +166,15 @@ ul {
   background-color: var(--pressed-state-color);
 }
 /* ---------Descriptions--------- */
-.decr-item {
-  margin-top: 133px;
-  margin-bottom: 120px;
+.decr {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .decr-title {
   margin-bottom: 8px;
 }
 .decr-list {
   display: flex;
-  padding-left: 0;
   gap: var(--card-set-gap);
 }
 .decr-list:last-child {
@@ -186,13 +182,12 @@ ul {
 }
 
 /* ---------About--------- */
-.about-title {
+.about {
+  padding-bottom: 120px;
 }
 .about-list {
   display: flex;
-  padding-left: 0;
   gap: var(--card-set-gap);
-  margin-bottom: 120px;
 }
 
 /* ---------Team--------- */
@@ -200,7 +195,6 @@ ul {
 .team-list {
   display: flex;
   gap: var(--card-set-gap);
-  padding-left: 0;
 }
 .team-title {
   padding-top: 32px;
@@ -215,14 +209,14 @@ ul {
   background-color: var(--accent-bg-color);
 }
 .team-item {
-  width: calc((100-24) / 4);
-
+  width: calc((100% - var(--card-set-gap)) / 4);
   text-align: center;
   background-color: var(--primary-white-color);
 }
 
 /* ---------Footer--------- */
 .footer-logo {
+  margin-bottom: 16px;
   color: var(--primary-brand);
   font-family: var(--secondary-font);
   font-weight: 800;
@@ -240,23 +234,23 @@ ul {
   color: var(--accent-text-color);
 }
 .footer-subtitle {
-  margin-top: 16px;
+
   width: 264px;
   color: var(--accent-text-color);
 }
 
 /* --------------Portfolio page-------------- */
+.portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
 .portfolio-list {
   display: flex;
   justify-content: center;
   gap: var(--card-set-gap);
-  padding-left: 0;
-  margin-top: 96px;
   margin-bottom: 72px;
 }
 .service-list {
-  padding: 0;
-  margin-bottom: 120px;
   display: flex;
   flex-wrap: wrap;
   margin-left: calc(-1 * var(--card-set-gap));
@@ -280,7 +274,6 @@ ul {
   padding: 12px 24px;
   background-color: var(--accent-text-color);
   color: var(--pressed-state-color);
-  border-color: var(--accent-text-color);
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
