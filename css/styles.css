@@ -216,6 +216,7 @@ img {
 
 /* ---------Footer--------- */
 .footer-logo {
+  display: inline-block;
   margin-bottom: 16px;
   color: var(--primary-brand);
   font-family: var(--secondary-font);
